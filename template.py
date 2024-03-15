@@ -4,7 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name="Covid CnnClassifier"
+project_name="Covid19 CnnClassifier"
 
 list_of_files=[
     "./github/workflows/.gitkeeep",

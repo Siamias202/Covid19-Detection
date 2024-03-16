@@ -1,2 +1,496 @@
 [2024-03-15 23:56:30,102: INFO: main: welcome to cnnClassifier]
 [2024-03-15 23:56:36,567: INFO: main: welcome to cnnClassifier]
+[2024-03-16 00:42:18,375: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-16 00:42:18,382: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 00:42:18,386: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 00:42:18,387: INFO: common: created directory at: artifacts]
+[2024-03-16 00:42:18,389: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-16 00:42:18,389: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-16 00:57:14,302: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-16 00:57:17,180: INFO: data_ingestion: Deleted zip file: artifacts/data_ingestion/data.zip]
+[2024-03-16 00:57:17,181: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-16 00:57:46,967: INFO: stage_02_prepare_base_model: *******************]
+[2024-03-16 00:57:46,967: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-03-16 00:57:46,974: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 00:57:46,980: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 00:57:46,981: INFO: common: created directory at: artifacts]
+[2024-03-16 00:57:46,982: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-16 00:57:47,900: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-16 00:57:48,713: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-03-16 00:58:00,037: INFO: stage_03_model_trainer: *******************]
+[2024-03-16 00:58:00,037: INFO: stage_03_model_trainer: >>>>>> stage Training started <<<<<<]
+[2024-03-16 00:58:00,044: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 00:58:00,049: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 00:58:00,050: INFO: common: created directory at: artifacts]
+[2024-03-16 00:58:00,052: INFO: common: created directory at: artifacts\training]
+[2024-03-16 00:58:38,464: INFO: stage_03_model_trainer: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-16 00:58:49,867: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 00:58:49,868: INFO: stage_04_model_evaluation: >>>>>> stage Training started <<<<<<]
+[2024-03-16 00:58:49,875: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 00:58:49,880: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 00:58:49,881: INFO: common: created directory at: artifacts]
+[2024-03-16 00:58:49,883: INFO: common: created directory at: artifacts\training]
+[2024-03-16 00:59:26,364: INFO: stage_04_model_evaluation: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-16 01:05:45,144: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-16 01:05:45,152: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 01:05:45,156: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 01:05:45,158: INFO: common: created directory at: artifacts]
+[2024-03-16 01:05:45,158: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-16 01:05:45,159: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-16 01:06:09,629: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-16 01:06:09,635: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 01:06:09,643: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 01:06:09,645: INFO: common: created directory at: artifacts]
+[2024-03-16 01:06:09,647: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-16 01:06:09,647: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-16 01:14:20,192: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-16 01:14:21,988: INFO: data_ingestion: Deleted zip file: artifacts/data_ingestion/data.zip]
+[2024-03-16 01:14:21,989: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-16 01:14:31,609: INFO: stage_02_prepare_base_model: *******************]
+[2024-03-16 01:14:31,609: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-03-16 01:14:31,614: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 01:14:31,616: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 01:14:31,616: INFO: common: created directory at: artifacts]
+[2024-03-16 01:14:31,618: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-16 01:14:32,112: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-16 01:14:32,732: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-03-16 01:14:38,949: INFO: stage_03_model_trainer: *******************]
+[2024-03-16 01:14:38,950: INFO: stage_03_model_trainer: >>>>>> stage Training started <<<<<<]
+[2024-03-16 01:14:38,953: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 01:14:38,957: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 01:14:38,957: INFO: common: created directory at: artifacts]
+[2024-03-16 01:14:38,958: INFO: common: created directory at: artifacts\training]
+[2024-03-16 01:15:05,528: INFO: stage_03_model_trainer: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-16 01:15:12,365: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 01:15:12,366: INFO: stage_04_model_evaluation: >>>>>> stage Training started <<<<<<]
+[2024-03-16 01:15:12,369: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 01:15:12,371: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 01:15:12,372: INFO: common: created directory at: artifacts]
+[2024-03-16 01:15:12,373: INFO: common: created directory at: artifacts\training]
+[2024-03-16 01:15:39,074: INFO: stage_04_model_evaluation: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-16 01:17:08,080: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 01:17:08,081: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation started <<<<<<]
+[2024-03-16 01:17:08,085: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 01:17:08,087: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 01:17:08,088: INFO: common: created directory at: artifacts]
+[2024-03-16 01:17:08,089: INFO: common: created directory at: artifacts\training]
+[2024-03-16 01:17:32,276: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation completed <<<<<<
+
+x==========x]
+[2024-03-16 21:41:02,766: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 21:41:02,767: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation started <<<<<<]
+[2024-03-16 21:41:02,783: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 21:41:02,789: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 21:41:02,790: INFO: common: created directory at: artifacts]
+[2024-03-16 21:41:02,791: INFO: common: created directory at: artifacts\training]
+[2024-03-16 21:41:55,927: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation completed <<<<<<
+
+x==========x]
+[2024-03-16 21:43:12,827: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-16 21:43:12,833: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 21:43:12,838: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 21:43:12,839: INFO: common: created directory at: artifacts]
+[2024-03-16 21:43:12,840: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-16 21:43:12,841: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-16 21:46:04,647: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-16 21:46:07,632: INFO: data_ingestion: Deleted zip file: artifacts/data_ingestion/data.zip]
+[2024-03-16 21:46:07,633: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-16 21:46:31,162: INFO: stage_02_prepare_base_model: *******************]
+[2024-03-16 21:46:31,163: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-03-16 21:46:31,170: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 21:46:31,175: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 21:46:31,176: INFO: common: created directory at: artifacts]
+[2024-03-16 21:46:31,178: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-16 21:46:32,021: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-16 21:46:32,800: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-03-16 21:46:47,943: INFO: stage_03_model_trainer: *******************]
+[2024-03-16 21:46:47,944: INFO: stage_03_model_trainer: >>>>>> stage Training started <<<<<<]
+[2024-03-16 21:46:47,949: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 21:46:47,954: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 21:46:47,956: INFO: common: created directory at: artifacts]
+[2024-03-16 21:46:47,957: INFO: common: created directory at: artifacts\training]
+[2024-03-16 21:47:33,831: INFO: stage_03_model_trainer: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-16 21:47:46,586: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 21:47:46,586: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation started <<<<<<]
+[2024-03-16 21:47:46,592: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 21:47:46,597: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 21:47:46,598: INFO: common: created directory at: artifacts]
+[2024-03-16 21:47:46,599: INFO: common: created directory at: artifacts\training]
+[2024-03-16 21:48:30,811: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation completed <<<<<<
+
+x==========x]
+[2024-03-16 21:51:16,374: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 21:51:16,376: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 21:51:16,391: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 21:51:16,396: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 21:51:16,398: INFO: common: created directory at: artifacts]
+[2024-03-16 21:51:16,399: ERROR: stage_04_model_evaluation: "'ConfigBox' object has no attribute 'evaluation'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'evaluation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'evaluation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'evaluation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'evaluation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'evaluation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'evaluation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'evaluation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 16, in main
+    eval_config = config.get_evaluation_config()
+  File "j:\2.1.1 modern computer vision_25022022\covid19-detection\src\cnnClassifier\config\configuration.py", line 84, in get_evaluation_config
+    evaluation=self.config.evaluation
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'evaluation'"
+[2024-03-16 21:52:19,286: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 21:52:19,287: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 21:52:19,294: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 21:52:19,301: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 21:52:19,302: INFO: common: created directory at: artifacts]
+[2024-03-16 21:52:20,305: ERROR: stage_04_model_evaluation: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion/Chest-CT-Scan-data']
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+  File "j:\2.1.1 modern computer vision_25022022\covid19-detection\src\cnnClassifier\components\model_evaluation_mlflow.py", line 47, in evaluation
+    self._valid_generator()
+  File "j:\2.1.1 modern computer vision_25022022\covid19-detection\src\cnnClassifier\components\model_evaluation_mlflow.py", line 32, in _valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\keras\preprocessing\image.py", line 1648, in flow_from_directory
+    return DirectoryIterator(
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\keras\preprocessing\image.py", line 563, in __init__
+    for subdir in sorted(os.listdir(directory)):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion/Chest-CT-Scan-data'
+[2024-03-16 21:53:18,750: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 21:53:18,752: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 21:53:18,758: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 21:53:18,763: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 21:53:18,764: INFO: common: created directory at: artifacts]
+[2024-03-16 21:53:23,933: INFO: common: json file saved at: scores.json]
+[2024-03-16 21:53:23,935: INFO: common: json file saved at: scores.json]
+[2024-03-16 21:53:23,936: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-03-16 22:01:19,058: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-16 22:01:19,064: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 22:01:19,068: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 22:01:19,069: INFO: common: created directory at: artifacts]
+[2024-03-16 22:01:19,069: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-16 22:01:19,070: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-16 22:04:32,383: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-16 22:04:35,434: INFO: data_ingestion: Deleted zip file: artifacts/data_ingestion/data.zip]
+[2024-03-16 22:04:35,435: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-16 22:04:56,504: INFO: stage_02_prepare_base_model: *******************]
+[2024-03-16 22:04:56,505: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-03-16 22:04:56,512: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 22:04:56,518: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 22:04:56,519: INFO: common: created directory at: artifacts]
+[2024-03-16 22:04:56,521: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-16 22:04:57,384: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-16 22:04:58,264: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-03-16 22:05:10,830: INFO: stage_03_model_trainer: *******************]
+[2024-03-16 22:05:10,832: INFO: stage_03_model_trainer: >>>>>> stage Training started <<<<<<]
+[2024-03-16 22:05:10,841: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 22:05:10,846: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 22:05:10,849: INFO: common: created directory at: artifacts]
+[2024-03-16 22:05:10,851: INFO: common: created directory at: artifacts\training]
+[2024-03-16 22:05:54,167: INFO: stage_03_model_trainer: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-16 22:06:09,234: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 22:06:09,234: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 22:06:09,241: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 22:06:09,245: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 22:06:09,247: INFO: common: created directory at: artifacts]
+[2024-03-16 22:06:09,248: ERROR: stage_04_model_evaluation: __init__() got an unexpected keyword argument 'testing_data']
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 16, in main
+    eval_config = config.get_evaluation_config()
+  File "j:\2.1.1 modern computer vision_25022022\covid19-detection\src\cnnClassifier\config\configuration.py", line 85, in get_evaluation_config
+    eval_config = EvaluationConfig(
+TypeError: __init__() got an unexpected keyword argument 'testing_data'
+[2024-03-16 22:07:49,801: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 22:07:49,802: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 22:07:49,809: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 22:07:49,814: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 22:07:49,815: INFO: common: created directory at: artifacts]
+[2024-03-16 22:07:54,701: INFO: common: json file saved at: scores.json]
+[2024-03-16 22:07:54,703: INFO: common: json file saved at: scores.json]
+[2024-03-16 22:07:54,704: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-03-16 23:15:31,536: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 23:15:31,537: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 23:15:31,549: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:15:31,552: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:15:31,552: INFO: common: created directory at: artifacts]
+[2024-03-16 23:15:32,344: ERROR: stage_04_model_evaluation: Failed to find data adapter that can handle input: <class 'method'>, <class 'NoneType'>]
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 33, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation_with_testing_data()
+  File "j:\2.1.1 modern computer vision_25022022\covid19-detection\src\cnnClassifier\components\model_evaluation_mlflow.py", line 75, in evaluation_with_testing_data
+    self.score = self.model.evaluate(self._valid_generator_testing)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\keras\engine\data_adapter.py", line 1082, in select_data_adapter
+    raise ValueError(
+ValueError: Failed to find data adapter that can handle input: <class 'method'>, <class 'NoneType'>
+[2024-03-16 23:16:12,946: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 23:16:12,947: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 23:16:12,951: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:16:12,953: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:16:12,954: INFO: common: created directory at: artifacts]
+[2024-03-16 23:16:13,487: ERROR: stage_04_model_evaluation: Failed to find data adapter that can handle input: <class 'method'>, <class 'NoneType'>]
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 33, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation_with_testing_data()
+  File "j:\2.1.1 modern computer vision_25022022\covid19-detection\src\cnnClassifier\components\model_evaluation_mlflow.py", line 75, in evaluation_with_testing_data
+    self.score = self.model.evaluate(self._valid_generator_testing)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\keras\engine\data_adapter.py", line 1082, in select_data_adapter
+    raise ValueError(
+ValueError: Failed to find data adapter that can handle input: <class 'method'>, <class 'NoneType'>
+[2024-03-16 23:20:48,725: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 23:20:48,726: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 23:20:48,729: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:20:48,731: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:20:48,732: INFO: common: created directory at: artifacts]
+[2024-03-16 23:20:48,732: ERROR: stage_04_model_evaluation: 'Evaluation' object has no attribute 'evalution']
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evalution()
+AttributeError: 'Evaluation' object has no attribute 'evalution'
+[2024-03-16 23:21:14,779: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 23:21:14,779: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 23:21:14,783: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:21:14,785: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:21:14,786: INFO: common: created directory at: artifacts]
+[2024-03-16 23:21:14,786: ERROR: stage_04_model_evaluation: 'Evaluation' object has no attribute 'evalution']
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evalution()
+AttributeError: 'Evaluation' object has no attribute 'evalution'
+[2024-03-16 23:21:45,750: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 23:21:45,750: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 23:21:45,753: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:21:45,757: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:21:45,758: INFO: common: created directory at: artifacts]
+[2024-03-16 23:21:48,706: INFO: common: json file saved at: testing_scores.json]
+[2024-03-16 23:21:56,890: INFO: common: json file saved at: training_scores.json]
+[2024-03-16 23:21:56,891: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-03-16 23:27:07,430: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 23:27:07,432: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 23:27:07,438: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:27:07,444: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:27:07,445: INFO: common: created directory at: artifacts]
+[2024-03-16 23:27:08,346: ERROR: stage_04_model_evaluation: 'Evaluation' object has no attribute 'valid_generator_testing']
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+  File "j:\2.1.1 modern computer vision_25022022\covid19-detection\src\cnnClassifier\components\model_evaluation_mlflow.py", line 76, in evaluation
+    testing_score = self.model.evaluate(self.valid_generator_testing)
+AttributeError: 'Evaluation' object has no attribute 'valid_generator_testing'
+[2024-03-16 23:30:07,973: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 23:30:07,974: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 23:30:07,980: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:30:07,985: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:30:07,986: INFO: common: created directory at: artifacts]
+[2024-03-16 23:30:08,917: ERROR: stage_04_model_evaluation: Failed to find data adapter that can handle input: <class 'method'>, <class 'NoneType'>]
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+  File "j:\2.1.1 modern computer vision_25022022\covid19-detection\src\cnnClassifier\components\model_evaluation_mlflow.py", line 76, in evaluation
+    testing_score = self.model.evaluate(self._valid_generator_testing)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\keras\engine\data_adapter.py", line 1082, in select_data_adapter
+    raise ValueError(
+ValueError: Failed to find data adapter that can handle input: <class 'method'>, <class 'NoneType'>
+[2024-03-16 23:35:07,104: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 23:35:07,105: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 23:35:07,112: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:35:07,117: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:35:07,118: INFO: common: created directory at: artifacts]
+[2024-03-16 23:35:08,213: ERROR: stage_04_model_evaluation: Failed to find data adapter that can handle input: <class 'method'>, <class 'NoneType'>]
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+  File "j:\2.1.1 modern computer vision_25022022\covid19-detection\src\cnnClassifier\components\model_evaluation_mlflow.py", line 78, in evaluation
+    testing_score = self.model.evaluate(self._valid_generator_testing)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\keras\engine\data_adapter.py", line 1082, in select_data_adapter
+    raise ValueError(
+ValueError: Failed to find data adapter that can handle input: <class 'method'>, <class 'NoneType'>
+[2024-03-16 23:37:07,299: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 23:37:07,300: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 23:37:07,306: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:37:07,310: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:37:07,311: INFO: common: created directory at: artifacts]
+[2024-03-16 23:37:07,312: ERROR: stage_04_model_evaluation: 'Evaluation' object has no attribute 'evaluation']
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+AttributeError: 'Evaluation' object has no attribute 'evaluation'
+[2024-03-16 23:37:42,118: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 23:37:42,119: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 23:37:42,125: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:37:42,129: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:37:42,131: INFO: common: created directory at: artifacts]
+[2024-03-16 23:37:46,928: INFO: common: json file saved at: testing_scores.json]
+[2024-03-16 23:37:59,028: INFO: common: json file saved at: training_scores.json]
+[2024-03-16 23:37:59,028: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-03-16 23:48:42,733: INFO: stage_03_model_trainer: *******************]
+[2024-03-16 23:48:42,734: INFO: stage_03_model_trainer: >>>>>> stage Training started <<<<<<]
+[2024-03-16 23:48:42,744: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:48:42,754: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:48:42,756: INFO: common: created directory at: artifacts]
+[2024-03-16 23:48:42,759: INFO: common: created directory at: artifacts\training]
+[2024-03-16 23:49:22,134: ERROR: stage_03_model_trainer: [Errno 2] No such file or directory: 'artifacts\\training\\model.h5\\accuracy_plot.png']
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_03_model_trainer.py", line 31, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_03_model_trainer.py", line 22, in main
+    training.learning_curve()
+  File "j:\2.1.1 modern computer vision_25022022\covid19-detection\src\cnnClassifier\components\model_trainer.py", line 106, in learning_curve
+    plt.savefig(save_path)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\matplotlib\pyplot.py", line 1023, in savefig
+    res = fig.savefig(*args, **kwargs)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\matplotlib\figure.py", line 3378, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\matplotlib\backend_bases.py", line 2366, in print_figure
+    result = print_method(
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\matplotlib\backend_bases.py", line 2232, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\matplotlib\backends\backend_agg.py", line 509, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\matplotlib\backends\backend_agg.py", line 458, in _print_pil
+    mpl.image.imsave(
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\matplotlib\image.py", line 1689, in imsave
+    image.save(fname, **pil_kwargs)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\PIL\Image.py", line 2436, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\training\\model.h5\\accuracy_plot.png'
+[2024-03-16 23:50:19,056: INFO: stage_03_model_trainer: *******************]
+[2024-03-16 23:50:19,057: INFO: stage_03_model_trainer: >>>>>> stage Training started <<<<<<]
+[2024-03-16 23:50:19,064: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:50:19,069: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:50:19,070: INFO: common: created directory at: artifacts]
+[2024-03-16 23:50:19,071: INFO: common: created directory at: artifacts\training]
+[2024-03-16 23:50:56,496: INFO: stage_03_model_trainer: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-16 23:51:10,340: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 23:51:10,341: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 23:51:10,346: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:51:10,350: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:51:10,351: INFO: common: created directory at: artifacts]
+[2024-03-16 23:51:15,058: INFO: common: json file saved at: testing_scores.json]
+[2024-03-16 23:51:27,143: INFO: common: json file saved at: training_scores.json]
+[2024-03-16 23:51:27,144: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-03-16 23:59:33,736: INFO: stage_04_model_evaluation: *******************]
+[2024-03-16 23:59:33,736: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 23:59:33,743: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 23:59:33,747: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 23:59:33,749: INFO: common: created directory at: artifacts]
+[2024-03-16 23:59:38,747: INFO: common: json file saved at: testing_scores.json]
+[2024-03-16 23:59:50,842: INFO: common: json file saved at: training_scores.json]
+[2024-03-16 23:59:54,247: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-03-16 23:59:55,642: INFO: builder_impl: Assets written to: C:\Users\User\AppData\Local\Temp\tmphnp4khfk\model\data\model\assets]
+[2024-03-17 00:00:13,541: INFO: dir_util: creating J:\2.1.1 Modern Computer Vision_25022022\Covid19-Detection\mlruns\0\f0f66505eacf4fa29837956905584133\artifacts\model\data]
+[2024-03-17 00:00:13,545: INFO: dir_util: creating J:\2.1.1 Modern Computer Vision_25022022\Covid19-Detection\mlruns\0\f0f66505eacf4fa29837956905584133\artifacts\model\data\model]
+[2024-03-17 00:00:13,548: INFO: dir_util: creating J:\2.1.1 Modern Computer Vision_25022022\Covid19-Detection\mlruns\0\f0f66505eacf4fa29837956905584133\artifacts\model\data\model\assets]
+[2024-03-17 00:00:13,559: INFO: dir_util: creating J:\2.1.1 Modern Computer Vision_25022022\Covid19-Detection\mlruns\0\f0f66505eacf4fa29837956905584133\artifacts\model\data\model\variables]
+[2024-03-17 00:00:13,924: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]

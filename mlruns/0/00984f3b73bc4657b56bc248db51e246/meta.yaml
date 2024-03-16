@@ -1,0 +1,15 @@
+artifact_uri: file:///J:/2.1.1%20Modern%20Computer%20Vision_25022022/Covid19-Detection/mlruns/0/00984f3b73bc4657b56bc248db51e246/artifacts
+end_time: 1710611991377
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 00984f3b73bc4657b56bc248db51e246
+run_name: capable-goat-578
+run_uuid: 00984f3b73bc4657b56bc248db51e246
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710611991241
+status: 3
+tags: []
+user_id: User

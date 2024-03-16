@@ -61,7 +61,7 @@ class ConfigurationManager:
         params = self.params
         training_data = os.path.join(self.config.data_ingestion.unzip_dir, "Covid19-dataset/train")
         create_directories([
-            Path(training.root_dir)
+            Path(training.root_dir),
         ])
 
         training_config = TrainingConfig(
@@ -72,7 +72,8 @@ class ConfigurationManager:
             params_epochs=params.EPOCHS,
             params_batch_size=params.BATCH_SIZE,
             params_is_augmentation=params.AUGMENTATION,
-            params_image_size=params.IMAGE_SIZE
+            params_image_size=params.IMAGE_SIZE,
+            learning_graph=Path(training.root_dir)
         )
 
         return training_config
@@ -81,9 +82,11 @@ class ConfigurationManager:
 
 
     def get_evaluation_config(self) -> EvaluationConfig:
+
         eval_config = EvaluationConfig(
             path_of_model="artifacts/training/model.h5",
-            training_data="artifacts/data_ingestion/Covid19-dataset",
+            training_data="artifacts/data_ingestion/Covid19-dataset/train",
+            testing_data="artifacts/data_ingestion/Covid19-dataset/test",
             mlflow_uri="https://dagshub.com/Siamias202/Covid19-Detection",
             all_params=self.params,
             params_image_size=self.params.IMAGE_SIZE,

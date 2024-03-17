@@ -60,6 +60,7 @@ class Training:
         self.train_generator = train_datagenerator.flow_from_directory(
             directory=self.config.training_data,
             subset="training",
+            class_mode='binary',
             shuffle=True,
             **dataflow_kwargs,
             classes={'Normal': 0, 
@@ -80,6 +81,7 @@ class Training:
         self.validation_steps = self.valid_generator.samples // self.valid_generator.batch_size
 
         checkpoint = tf.keras.callbacks.ModelCheckpoint(self.config.trained_model_path, monitor='acc', verbose=1, mode='max',save_best_only=True)
+        early = tf.keras.callbacks.EarlyStopping(monitor="val_loss", mode="min",restore_best_weights=True, patience=10)
 
 
 
@@ -89,7 +91,7 @@ class Training:
             steps_per_epoch=self.steps_per_epoch,
             validation_steps=self.validation_steps,
             validation_data=self.valid_generator,
-            callbacks=checkpoint
+            callbacks=[checkpoint,early]
         )
 
         self.save_model(

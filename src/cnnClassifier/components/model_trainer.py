@@ -79,7 +79,9 @@ class Training:
         self.steps_per_epoch = self.train_generator.samples // self.train_generator.batch_size
         self.validation_steps = self.valid_generator.samples // self.valid_generator.batch_size
 
-        early = tf.keras.callbacks.EarlyStopping(monitor="val_loss", mode="min",restore_best_weights=True, patience=5)
+        checkpoint = tf.keras.callbacks.ModelCheckpoint(self.config.trained_model_path, monitor='acc', verbose=1, mode='max',save_best_only=True)
+
+
 
         self.history=self.model.fit(
             self.train_generator,
@@ -87,7 +89,7 @@ class Training:
             steps_per_epoch=self.steps_per_epoch,
             validation_steps=self.validation_steps,
             validation_data=self.valid_generator,
-            callbacks=early
+            callbacks=checkpoint
         )
 
         self.save_model(

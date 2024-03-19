@@ -494,3 +494,122 @@ x==========x]
 [2024-03-17 00:00:13,924: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-03-17 20:51:50,830: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-17 20:51:50,837: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-17 20:51:50,843: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-17 20:51:50,843: INFO: common: created directory at: artifacts]
+[2024-03-17 20:51:50,845: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-17 20:51:50,845: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-19 21:48:05,781: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2024-03-19 21:48:05,782: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-19 21:48:13,592: INFO: _internal: 192.168.0.103 - - [19/Mar/2024 21:48:13] "GET / HTTP/1.1" 200 -]
+[2024-03-19 21:49:29,368: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-19 21:49:29,382: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-19 21:49:29,389: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-19 21:49:29,391: INFO: common: created directory at: artifacts]
+[2024-03-19 21:49:29,393: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-19 21:49:29,394: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-19 21:49:42,106: ERROR: stage_01_data_ingestion: HTTPSConnectionPool(host='doc-04-6g-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/emoeaq47jn6lp1amdnsgnhdq9fufvnhi/nblvct8uotjsfcno4j24gkr08o0jg6md/1710863325000/06698153620325224180/02773955779565050281Z/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g?uuid=a675eeb4-4d2c-4ccb-84eb-3e3aa0916e1f (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000257AD133760>: Failed to resolve 'doc-04-6g-docs.googleusercontent.com' ([Errno 11001] getaddrinfo failed)"))]
+Traceback (most recent call last):
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\Anaconda_envs\envs\covid\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\urllib3\connection.py", line 616, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x00000257AD133760>: Failed to resolve 'doc-04-6g-docs.googleusercontent.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='doc-04-6g-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/emoeaq47jn6lp1amdnsgnhdq9fufvnhi/nblvct8uotjsfcno4j24gkr08o0jg6md/1710863325000/06698153620325224180/02773955779565050281Z/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g?uuid=a675eeb4-4d2c-4ccb-84eb-3e3aa0916e1f (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000257AD133760>: Failed to resolve 'doc-04-6g-docs.googleusercontent.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 27, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "j:\2.1.1 modern computer vision_25022022\covid19-detection\src\cnnClassifier\components\data_ingestion.py", line 34, in download_file
+    raise e
+  File "j:\2.1.1 modern computer vision_25022022\covid19-detection\src\cnnClassifier\components\data_ingestion.py", line 29, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\gdown\download.py", line 188, in download
+    res = sess.get(url, stream=True, verify=verify)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\requests\sessions.py", line 725, in send
+    history = [resp for resp in gen]
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\requests\sessions.py", line 725, in <listcomp>
+    history = [resp for resp in gen]
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\requests\sessions.py", line 266, in resolve_redirects
+    resp = self.send(
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Anaconda_envs\envs\covid\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='doc-04-6g-docs.googleusercontent.com', port=443): Max retries exceeded with url: /docs/securesc/emoeaq47jn6lp1amdnsgnhdq9fufvnhi/nblvct8uotjsfcno4j24gkr08o0jg6md/1710863325000/06698153620325224180/02773955779565050281Z/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g?uuid=a675eeb4-4d2c-4ccb-84eb-3e3aa0916e1f (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000257AD133760>: Failed to resolve 'doc-04-6g-docs.googleusercontent.com' ([Errno 11001] getaddrinfo failed)"))
+[2024-03-19 21:50:22,341: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-19 21:50:22,348: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-19 21:50:22,353: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-19 21:50:22,355: INFO: common: created directory at: artifacts]
+[2024-03-19 21:50:22,356: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-19 21:50:22,357: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-19 21:56:10,846: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/16Yv-3aBcvU5YzRwl44HuHElThcqG3v5g/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-19 21:56:13,745: INFO: data_ingestion: Deleted zip file: artifacts/data_ingestion/data.zip]
+[2024-03-19 21:56:13,746: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-19 21:56:34,758: INFO: stage_02_prepare_base_model: *******************]
+[2024-03-19 21:56:34,759: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-03-19 21:56:34,765: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-19 21:56:34,771: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-19 21:56:34,772: INFO: common: created directory at: artifacts]
+[2024-03-19 21:56:34,773: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-19 21:56:35,748: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-19 21:56:36,542: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-03-19 21:56:57,065: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2024-03-19 21:56:57,066: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-19 21:58:16,069: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.103:8080]
+[2024-03-19 21:58:16,071: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-19 21:58:20,344: INFO: _internal: 192.168.0.103 - - [19/Mar/2024 21:58:20] "GET / HTTP/1.1" 200 -]
+[2024-03-19 21:59:44,745: INFO: _internal: 192.168.0.103 - - [19/Mar/2024 21:59:44] "POST /predict HTTP/1.1" 200 -]
+[2024-03-19 22:00:05,468: INFO: _internal: 192.168.0.103 - - [19/Mar/2024 22:00:05] "POST /predict HTTP/1.1" 200 -]
+[2024-03-19 22:00:20,851: INFO: _internal: 192.168.0.103 - - [19/Mar/2024 22:00:20] "POST /predict HTTP/1.1" 200 -]

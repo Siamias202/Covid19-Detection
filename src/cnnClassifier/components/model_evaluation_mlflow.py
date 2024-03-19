@@ -56,6 +56,9 @@ class Evaluation:
             subset="validation",
             shuffle=False,
             class_mode='categorical',
+             classes={'Normal': 0, 
+                     'Viral Pneumonia': 1,
+                     'Covid': 2},
             **dataflow_kwargs
 
         )
